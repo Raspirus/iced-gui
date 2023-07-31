@@ -1,0 +1,29 @@
+[package]
+name = "raspirus"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.19"
+md5 = "0.7.0"
+winapi = "0.3"
+sysinfo = "0.29"
+pretty_env_logger = "0.5.0"
+reqwest = { version = "0.11.18", features = ["blocking"] }
+rusqlite = { version = "0.29.0", features =  ["bundled"] }
+terminal_size = "0.2.6"
+tokio = "1.29.1"
+walkdir = "2.3.3"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4.26"
+directories-next = "2.0.0"
+iced = { version ="0.9", features = ["image", "tokio"] }
+iced_aw = { version = "0.5", default-features = false, features = ["modal", "icons", "card", "number_input"] }
+iced_lazy = "0.6"
+rfd = "0.11.4"
+rust-i18n = "2.0.0"
+flume = "0.10.14"
+job_scheduler_ng = "2.0.4"
